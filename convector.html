@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base</title>
+    <link rel="stylesheet" href="styles-convector.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Convector</h1>
+</header>
+
+<main>
+    <div class="format-container">
+        <p id="inputCount">Valid Phone Numbers: 0</p>          
+
+        <label for="format">Select Phone Number Format:</label>
+        
+
+        <select id="format">
+            <option value="+38 XXX XXX XX XX">+38 XXX XXX XX XX</option>
+            <option value="+38 (XXX) XXX XX XX">+38 (XXX) XXX XX XX</option>
+            <option value="+38 (XXX) XXX-XX-XX">+38 (XXX) XXX-XX-XX</option>
+            <option value="+38 (XXX) XX XXX XX">+38 (XXX) XX XXX XX</option>
+            <option value="+38X (XX) XXX-XX-XX">+38X (XX) XXX-XX-XX - PROM</option>
+            <option value="+38X (XX) XXX XX XX">+38X (XX) XXX XX XX - PROM</option>
+            <option value="+38(XXX)XXX-XX-XX">+38(XXX)XXX-XX-XX</option>
+            <option value="38XXXXXXXXXX">38XXXXXXXXXX special4DAN</option>
+            <option value="XXX XXX XX XX">XXX XXX XX XX</option>
+            <option value="(XXX) XXX XX XX">(XXX) XXX XX XX</option>
+            <option value="(XXX) XXX-XX-XX">(XXX) XXX-XX-XX</option>
+            <option value="(XXX)-XXX-XX-XX">(XXX)-XXX-XX-XX</option>
+            <option value="XXX XXX-XX-XX">XXX XXX-XX-XX</option>
+            <option value="XXXX XXX XXX">0800 XXX XXX</option>
+            <option value="X XXX XXX XXX">0 800 XXX XXX</option>
+            <option value="X XXX XX XX XX">0 800 XX XX XX</option>
+            <option value="X (XXX) XXX-XXX">0 (800) XXX-XXX</option>
+            <option value="X (XXX) XXX XXX">0 (800) XXX XXX</option>
+        </select>
+        <select id="kazakhFormat">
+            <option value="+X XXX XXX-XX-XX">+X XXX XXX-XX-XX</option>
+            <option value="+X (XXX) XXX-XX-XX">+X (XXX) XXX-XX-XX</option>
+            <option value="+X XXX XXX XX XX">+X XXX XXX XX XX</option>
+            <option value="+X XXX XXX XXXX">+X XXX XXX XXXX</option>
+        </select>
+    </div>
+    <textarea id="input" rows="10" placeholder="Enter phone numbers"></textarea>
+    <button id="convert">Convert</button>
+    <button id="convertKazakh">Convert KZ</button>
+    <button id="clear">Clear</button>
+    <button id="copyOutput">Copy Output</button>
+    <textarea id="output" rows="10" readonly></textarea>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
